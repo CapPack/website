@@ -54,21 +54,14 @@ const Navbar = () => {
         >
           Credits
         </Link>
-        <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.gg/aDE8TYA" target="_blank" rel="noopener noreferrer">
           <img
             src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"
             className="w-10 mx-4 my-4 hover:w-11"
             alt="discord logo"
           />
         </a>
-        <a href="https://reddit.com" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://static-00.iconduck.com/assets.00/reddit-icon-256x256-60kyb8pn.png"
-            className="w-10 mx-4 my-4 hover:w-11"
-            alt="reddit icon"
-          />
-        </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/CapPack/the-captainsparklez-texture-pack" target="_blank" rel="noopener noreferrer">
           <img
             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
             className="w-10 mx-4 my-4 hover:w-11"
