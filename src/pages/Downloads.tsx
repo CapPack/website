@@ -1,5 +1,5 @@
 const Downloads = () => {
-  return <div>Welcome to Downloads</div>;
+  return <div>Downloads</div>;
 };
 
 export default Downloads;
