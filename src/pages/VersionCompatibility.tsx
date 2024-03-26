@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 function VersionCompatibility() {
+  useEffect(() => {
+    document.title = "Version Compatibility - CapPack";
+  }, []);
+
   return (
     <>
       <iframe

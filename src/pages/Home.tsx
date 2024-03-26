@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import image1 from "../assets/image1.png";
+import image2 from "../assets/image2.png";
+import image3 from "../assets/image3.png";
+import image4 from "../assets/image4.png";
+import image5 from "../assets/image5.png";
+import image6 from "../assets/image6.png";
 
 const Home = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="text-center">
       <p className="m-10 font-bold text-6xl">CapPack</p>
@@ -62,9 +82,10 @@ const Home = () => {
                 <div
                   className="h-full"
                   style={{
-                    backgroundImage: `url('slide1.jpg')`,
+                    backgroundImage: `url(${image1})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
+                    width: windowWidth,
                   }}
                 >
                   <span>Slide 1</span>
@@ -74,9 +95,10 @@ const Home = () => {
                 <div
                   className="h-full"
                   style={{
-                    backgroundImage: `url('slide2.jpg')`,
+                    backgroundImage: `url(${image2})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
+                    width: windowWidth,
                   }}
                 >
                   <span>Slide 2</span>
@@ -86,12 +108,52 @@ const Home = () => {
                 <div
                   className="h-full"
                   style={{
-                    backgroundImage: `url('slide3.jpg')`,
+                    backgroundImage: `url(${image3})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
+                    width: windowWidth,
                   }}
                 >
                   <span>Slide 3</span>
+                </div>
+              </div>
+              <div className="each-slide h-full">
+                <div
+                  className="h-full"
+                  style={{
+                    backgroundImage: `url(${image4})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    width: windowWidth,
+                  }}
+                >
+                  <span>Slide 4</span>
+                </div>
+              </div>
+              <div className="each-slide h-full">
+                <div
+                  className="h-full"
+                  style={{
+                    backgroundImage: `url(${image5})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    width: windowWidth,
+                  }}
+                >
+                  <span>Slide 5</span>
+                </div>
+              </div>
+              <div className="each-slide h-full">
+                <div
+                  className="h-full"
+                  style={{
+                    backgroundImage: `url(${image6})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    width: windowWidth,
+                  }}
+                >
+                  <span>Slide 6</span>
                 </div>
               </div>
             </Slide>
@@ -109,14 +171,13 @@ const Home = () => {
         <div className="w-1/2 flex justify-center items-center">
           <div>
             <iframe
-              width="701"
-              height="394"
+              width={windowWidth > 701 ? 701 : windowWidth}
+              height={(windowWidth > 701 ? 701 : windowWidth) * (394 / 701)}
               src="https://www.youtube.com/embed/bzWLMkoM9ks"
               title="Captain Approved Texture Pack"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
         </div>

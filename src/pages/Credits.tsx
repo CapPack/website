@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 function Credits() {
+  useEffect(() => {
+    document.title = "Credits - CapPack";
+  }, []);
+
   return (
     <>
       <iframe
