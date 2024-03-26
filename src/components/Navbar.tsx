@@ -22,17 +22,14 @@ const Navbar = () => {
               CapPack
             </a>
           </span>
-          {"  "}Official CaptainSparklez Texture Pack Website
+          {"  "}The CaptainSparklez Texture Pack
         </p>
       </div>
       <div className="flex flex-row w-full text-xl items-center justify-end mr-4">
         <Link to="/" className={`m-4 ${isActive("/")}`}>
           Home
         </Link>
-        <Link
-          to="/downloads"
-          className={`m-4 ${isActive("/downloads")}`}
-        >
+        <Link to="/downloads" className={`m-4 ${isActive("/downloads")}`}>
           Downloads
         </Link>
         <Link
