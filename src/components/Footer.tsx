@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="text-4xl text-center items-center m-4">
+    <div className="text-4xl text-center items-center m-8">
       <p>
         Made by{" "}
         <a

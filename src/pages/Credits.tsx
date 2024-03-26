@@ -3,7 +3,7 @@ function Credits() {
     <>
       <iframe
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSV9jpOPAEtFTpAEFAZY1DxLMLQnYDiqkdHinviYVFD5oN4YXA97lY_jinhk23vRzD0lAwkD5-2TsBn/pubhtml?widget=true&amp;headers=false"
-        className="p-10 w-full h-full"
+        className="px-10 w-full h-full"
       />
     </>
   );
