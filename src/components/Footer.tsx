@@ -1,22 +1,26 @@
 const Footer = () => {
   return (
-    <div>
-      <div className="text-4xl w-full text-center flex-auto">
-        <p className="">
-          Made by{" "}
-          <span className="text-thermic-orange decoration-black underline hover:no-underline">
-            <a href="https://thermic.icu" target="_blank">
-              ThermicWaffle
-            </a>
-          </span>{" "}
-          &{" "}
-          <span className="text-greenish underline hover:no-underline decoration-black">
-            <a href="https://linktr.ee/muddyCookie" target="_blank">
-              muddyCookie
-            </a>
-          </span>
-        </p>
-      </div>
+    <div className="text-4xl text-center items-center m-4">
+      <p>
+        Made by{" "}
+        <a
+          href="https://thermic.icu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-thermic-orange hover:no-underline underline"
+        >
+          ThermicWaffle
+        </a>{" "}
+        &{" "}
+        <a
+          href="https://linktr.ee/muddyCookie"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-greenish hover:no-underline underline"
+        >
+          muddyCookie
+        </a>
+      </p>
     </div>
   );
 };

@@ -9,20 +9,22 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-row w-full items-center">
-      <img src={CapPackImage} alt="CapPack Logo" className="w-32 mx-4 my-4" />
-      <p className="w-full m-auto items-center mx-4 text-2xl">
-        <span className="font-bold hover:underline">
-          <a
-            href="https://cappack.page"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CapPack
-          </a>
-        </span>
-        {"  "}Official CaptainSparklez Texture Pack Website
-      </p>
+    <div className="flex flex-row w-full">
+      <div className="flex flex-row justify-end w-full">
+        <img src={CapPackImage} alt="CapPack Logo" className="w-32 mx-4 my-4" />
+        <p className="w-full m-auto items-center mx-4 text-2xl">
+          <span className="font-bold hover:underline">
+            <a
+              href="https://cappack.page"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CapPack
+            </a>
+          </span>
+          {"  "}Official CaptainSparklez Texture Pack Website
+        </p>
+      </div>
       <div className="flex flex-row flex-wrap justify-end w-full mx-4 items-center">
         <Link to="/" className={`m-4 text-xl ${isActive("/")}`}>
           Home
