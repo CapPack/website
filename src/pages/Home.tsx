@@ -84,7 +84,7 @@ const Home = () => {
                   style={{
                     backgroundImage: `url(${image1})`,
                     width: "100%",
-                    paddingTop: "56.25%", // 16:9 aspect ratio
+                    paddingTop: "56.25%",
                   }}
                 >
                   <span className="hidden">Slide 1</span>
@@ -96,7 +96,7 @@ const Home = () => {
                   style={{
                     backgroundImage: `url(${image2})`,
                     width: "100%",
-                    paddingTop: "56.25%", // 16:9 aspect ratio
+                    paddingTop: "56.25%",
                   }}
                 >
                   <span className="hidden">Slide 2</span>
@@ -108,7 +108,7 @@ const Home = () => {
                   style={{
                     backgroundImage: `url(${image3})`,
                     width: "100%",
-                    paddingTop: "56.25%", // 16:9 aspect ratio
+                    paddingTop: "56.25%",
                   }}
                 >
                   <span className="hidden">Slide 3</span>
@@ -120,7 +120,7 @@ const Home = () => {
                   style={{
                     backgroundImage: `url(${image4})`,
                     width: "100%",
-                    paddingTop: "56.25%", // 16:9 aspect ratio
+                    paddingTop: "56.25%",
                   }}
                 >
                   <span className="hidden">Slide 4</span>
@@ -132,7 +132,7 @@ const Home = () => {
                   style={{
                     backgroundImage: `url(${image5})`,
                     width: "100%",
-                    paddingTop: "56.25%", // 16:9 aspect ratio
+                    paddingTop: "56.25%",
                   }}
                 >
                   <span className="hidden">Slide 5</span>
@@ -144,7 +144,7 @@ const Home = () => {
                   style={{
                     backgroundImage: `url(${image6})`,
                     width: "100%",
-                    paddingTop: "56.25%", // 16:9 aspect ratio
+                    paddingTop: "56.25%",
                   }}
                 >
                   <span className="hidden">Slide 6</span>
@@ -154,13 +154,13 @@ const Home = () => {
           </div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-6xl">Plenty of custom textures, custom models, and splash texts you won’t find anywhere else. Oh, and it reduces rain particles without needing OptiFine :P</div>
+          <div className="font-semibold text-center text-4xl">Plenty of custom textures, custom models, and splash texts you won’t find anywhere else. Oh, and it reduces rain particles without needing OptiFine :P</div>
         </div>
       </div>
       <hr className="w-80 mx-auto" />
       <div className="my-10 flex">
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-6xl">The Official CaptainSparklez Texture Pack, used and approved by CaptainSparklez himself.</div>
+          <div className="font-semibold text-center text-4xl">The Official CaptainSparklez Texture Pack, used and approved by CaptainSparklez himself.</div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
           <div>
@@ -182,7 +182,7 @@ const Home = () => {
           <div>Left Buttons</div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-6xl">Community inspired and made. The perfect texture pack for any CaptainSparklez fan, loved by all.</div>
+          <div className="font-semibold text-center text-4xl">Community inspired and made. The perfect texture pack for any CaptainSparklez fan, loved by all.</div>
         </div>
       </div>
       <hr className="w-80 mx-auto" />
