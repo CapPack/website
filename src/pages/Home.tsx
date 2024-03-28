@@ -154,13 +154,13 @@ const Home = () => {
           </div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-2xl">Plenty of custom textures, custom models, and splash texts you won’t find anywhere else. Oh, and it reduces rain particles without needing OptiFine :P</div>
+          <div className="font-semibold text-center text-6xl">Plenty of custom textures, custom models, and splash texts you won’t find anywhere else. Oh, and it reduces rain particles without needing OptiFine :P</div>
         </div>
       </div>
       <hr className="w-80 mx-auto" />
       <div className="my-10 flex">
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-2xl">The Official CaptainSparklez Texture Pack, used and approved by CaptainSparklez himself.</div>
+          <div className="font-semibold text-center text-6xl">The Official CaptainSparklez Texture Pack, used and approved by CaptainSparklez himself.</div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
           <div>
@@ -182,7 +182,7 @@ const Home = () => {
           <div>Left Buttons</div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-2xl">Community inspired and made. The perfect texture pack for any CaptainSparklez fan, loved by all.</div>
+          <div className="font-semibold text-center text-6xl">Community inspired and made. The perfect texture pack for any CaptainSparklez fan, loved by all.</div>
         </div>
       </div>
       <hr className="w-80 mx-auto" />
