@@ -55,7 +55,7 @@ const Home = () => {
             href="https://www.optifine.net/home"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "#1E40AF" }}
+            className="text-blue-600"
           >
             OptiFine
           </a>
@@ -66,7 +66,7 @@ const Home = () => {
             href="https://modrinth.com/mod/entity-model-features"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "#1E40AF" }}
+            className="text-blue-600"
           >
             Entity Model Features
           </a>
@@ -78,82 +78,76 @@ const Home = () => {
         <div className="w-1/2">
           <div className="slide-container h-full mx-10">
             <Slide>
-              <div className="each-slide h-full">
+              <div className="each-slide">
                 <div
-                  className="h-full"
+                  className="h-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${image1})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    width: windowWidth,
+                    width: "100%",
+                    paddingTop: "56.25%", // 16:9 aspect ratio
                   }}
                 >
-                  <span>Slide 1</span>
+                  <span className="hidden">Slide 1</span>
                 </div>
               </div>
-              <div className="each-slide h-full">
+              <div className="each-slide">
                 <div
-                  className="h-full"
+                  className="h-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${image2})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    width: windowWidth,
+                    width: "100%",
+                    paddingTop: "56.25%", // 16:9 aspect ratio
                   }}
                 >
-                  <span>Slide 2</span>
+                  <span className="hidden">Slide 2</span>
                 </div>
               </div>
-              <div className="each-slide h-full">
+              <div className="each-slide">
                 <div
-                  className="h-full"
+                  className="h-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${image3})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    width: windowWidth,
+                    width: "100%",
+                    paddingTop: "56.25%", // 16:9 aspect ratio
                   }}
                 >
-                  <span>Slide 3</span>
+                  <span className="hidden">Slide 3</span>
                 </div>
               </div>
-              <div className="each-slide h-full">
+              <div className="each-slide">
                 <div
-                  className="h-full"
+                  className="h-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${image4})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    width: windowWidth,
+                    width: "100%",
+                    paddingTop: "56.25%", // 16:9 aspect ratio
                   }}
                 >
-                  <span>Slide 4</span>
+                  <span className="hidden">Slide 4</span>
                 </div>
               </div>
-              <div className="each-slide h-full">
+              <div className="each-slide">
                 <div
-                  className="h-full"
+                  className="h-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${image5})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    width: windowWidth,
+                    width: "100%",
+                    paddingTop: "56.25%", // 16:9 aspect ratio
                   }}
                 >
-                  <span>Slide 5</span>
+                  <span className="hidden">Slide 5</span>
                 </div>
               </div>
-              <div className="each-slide h-full">
+              <div className="each-slide">
                 <div
-                  className="h-full"
+                  className="h-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${image6})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    width: windowWidth,
+                    width: "100%",
+                    paddingTop: "56.25%", // 16:9 aspect ratio
                   }}
                 >
-                  <span>Slide 6</span>
+                  <span className="hidden">Slide 6</span>
                 </div>
               </div>
             </Slide>
