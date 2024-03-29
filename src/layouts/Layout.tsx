@@ -1,16 +1,16 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
-  const location = useLocation();
-  const isEmbedPage = location.pathname === "/version-compatibility" || location.pathname === "/credits";
+interface LayoutProps {
+  fullHeight?: boolean;
+}
 
+const Layout: React.FC<LayoutProps> = ({ children, fullHeight = false }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className={`flex flex-col min-h-screen ${fullHeight ? 'h-full' : 'flex-grow'}`}>
       <Navbar />
-      <div className={`flex-grow ${isEmbedPage ? "h-full" : ""}`}>{children}</div>
+      <div>{children}</div>
       <Footer />
     </div>
   );
