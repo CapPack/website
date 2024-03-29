@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Layout from "./Layout";
+import Layout from "../layouts/Layout";
 
 function VersionCompatibility() {
   useEffect(() => {
