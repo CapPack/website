@@ -26,25 +26,27 @@ const Navbar = () => {
         </p>
       </div>
       <div className="flex flex-row w-full text-xl items-center justify-end mr-4">
-        <Link to="/" className={`m-4 ${isActive("/")}`}>
+        <Link to="/" className={`m-4 ${isActive("/")}`} style={{ width: "6rem" }}>
           Home
         </Link>
-        <Link to="/downloads" className={`m-4 ${isActive("/downloads")}`}>
+        <Link to="/downloads" className={`m-4 ${isActive("/downloads")}`} style={{ width: "9rem" }}>
           Downloads
         </Link>
         <Link
           to="/version-compatibility"
           className={`m-4 ${isActive("/version-compatibility")}`}
+          style={{ width: "14rem" }}
         >
           Version Compatibility
         </Link>
-        <Link to="/credits" className={`m-4 ${isActive("/credits")}`}>
+        <Link to="/credits" className={`m-4 ${isActive("/credits")}`} style={{ width: "7rem" }}>
           Credits
         </Link>
         <a
           href="https://discord.gg/aDE8TYA"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ width: "3.5rem" }}
         >
           <img
             src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"
@@ -56,6 +58,7 @@ const Navbar = () => {
           href="https://github.com/CapPack/the-captainsparklez-texture-pack"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ width: "3.5rem" }}
         >
           <img
             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
