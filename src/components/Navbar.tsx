@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
-import { FaMoon, FaSun } from "react-icons/fa";
+import CapPackImage from "../assets/CapPack.png";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
