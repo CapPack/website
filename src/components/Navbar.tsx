@@ -15,9 +15,9 @@ const Navbar: React.FC = () => {
   return (
     <div className={`flex w-full ${isMobile ? "flex-col" : "flex-row"}`}>
       {isMobile ? (
-        <div className="w-full flex justify-between items-center">
+        <div className="w-full flex items-center">
           <button
-            className="text-2xl"
+            className="text-2xl mr-2"
             onClick={() => setIsOpen(!isOpen)}
           >
             ☰
