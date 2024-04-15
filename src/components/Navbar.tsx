@@ -20,9 +20,9 @@ const Navbar: React.FC = () => {
             className="text-2xl w-full"
             onClick={() => setIsOpen(!isOpen)}
           >
-            Menu
+            ☰
           </button>
-          <div className={`${isOpen ? "" : "hidden"} w-full`}>
+          <div className={`flex flex-col w-full ${isOpen ? "" : "hidden"}`}>
             <Link to="/" className={isActive("/")}>
               Home
             </Link>
@@ -44,28 +44,6 @@ const Navbar: React.FC = () => {
             >
               Credits
             </Link>
-            <a
-              href="https://discord.gg/aDE8TYA"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 m-4"
-            >
-              <img
-                src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"
-                alt="discord logo"
-              />
-            </a>
-            <a
-              href="https://github.com/CapPack/the-captainsparklez-texture-pack"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 m-4"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                alt="github icon"
-              />
-            </a>
           </div>
         </>
       ) : (
