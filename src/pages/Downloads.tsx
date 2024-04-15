@@ -15,7 +15,8 @@ type MinecraftVersion =
   | "1.13 - 1.14.4"
   | "1.11 - 1.12.2"
   | "1.9 - 1.10.2"
-  | "1.6.1 - 1.8.9";
+  | "1.6.1 - 1.8.9"
+  | undefined;
 type PackReleaseVersion =
   | "v13"
   | "v12"
@@ -29,7 +30,8 @@ type PackReleaseVersion =
   | "v4"
   | "v3"
   | "v2"
-  | "v1";
+  | "v1"
+  | undefined;
 type Link = string;
 
 const downloadsData: Record<
