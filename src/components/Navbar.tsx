@@ -26,20 +26,20 @@ const Navbar = () => {
         </p>
       </div>
       <div className="flex flex-row w-full text-xl items-center justify-end mr-4">
-        <Link to="/" className={`${isActive("/")}`} style={{ width: "6rem" }}>
+        <Link to="/" className={`text-center ${isActive("/")}`} style={{ width: "6rem" }}>
           Home
         </Link>
-        <Link to="/downloads" className={`${isActive("/downloads")}`} style={{ width: "9rem" }}>
+        <Link to="/downloads" className={`text-center ${isActive("/downloads")}`} style={{ width: "9rem" }}>
           Downloads
         </Link>
         <Link
           to="/version-compatibility"
-          className={`${isActive("/version-compatibility")}`}
+          className={`text-center ${isActive("/version-compatibility")}`}
           style={{ width: "14rem" }}
         >
           Version Compatibility
         </Link>
-        <Link to="/credits" className={`${isActive("/credits")}`} style={{ width: "7rem" }}>
+        <Link to="/credits" className={`text-center ${isActive("/credits")}`} style={{ width: "7rem" }}>
           Credits
         </Link>
         <a
