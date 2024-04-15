@@ -1,15 +1,17 @@
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import CapPackImage from "../assets/CapPack.png";
 
 const Navbar = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
 
   const isActive = (path: string) => {
     return location.pathname === path ? "font-bold" : "hover:font-bold";
   };
 
   return (
-    <div className="flex flex-row w-full mr-">
+    <div className="flex flex-col md:flex-row w-full">
       <div className="flex flex-row w-full text-2xl items-center">
         <img src={CapPackImage} alt="CapPack Logo" className="w-32 m-4" />
         <p>
@@ -25,11 +27,21 @@ const Navbar = () => {
           {"  "}The CaptainSparklez Texture Pack
         </p>
       </div>
-      <div className="flex flex-row w-full text-xl items-center justify-end mr-4">
-        <Link to="/" className={`text-center ${isActive("/")}`} style={{ width: "6rem" }}>
+      <div
+        className={`${isOpen ? "flex" : "hidden"} flex-col md:flex-row w-full text-xl items-center justify-end md:mr-4`}
+      >
+        <Link
+          to="/"
+          className={`text-center ${isActive("/")}`}
+          style={{ width: "6rem" }}
+        >
           Home
         </Link>
-        <Link to="/downloads" className={`text-center ${isActive("/downloads")}`} style={{ width: "9rem" }}>
+        <Link
+          to="/downloads"
+          className={`text-center ${isActive("/downloads")}`}
+          style={{ width: "9rem" }}
+        >
           Downloads
         </Link>
         <Link
@@ -39,10 +51,14 @@ const Navbar = () => {
         >
           Version Compatibility
         </Link>
-        <Link to="/credits" className={`text-center ${isActive("/credits")}`} style={{ width: "7rem" }}>
+        <Link
+          to="/credits"
+          className={`text-center ${isActive("/credits")}`}
+          style={{ width: "7rem" }}
+        >
           Credits
         </Link>
-                <a
+        <a
           href="https://discord.gg/aDE8TYA"
           target="_blank"
           rel="noopener noreferrer"
@@ -65,6 +81,9 @@ const Navbar = () => {
           />
         </a>
       </div>
+      <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
+        Menu
+      </button>
     </div>
   );
 };
