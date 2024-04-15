@@ -9,6 +9,9 @@ import image5 from "../assets/image5.png";
 import image6 from "../assets/image6.png";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home - CapPack";
+  }, []);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -76,7 +79,7 @@ const Home = () => {
       <hr className="w-80 mx-auto" />
       <div className="my-10 flex">
         <div className="w-1/2">
-          <div className="slide-container h-full mx-10">
+          <div className="slide-container h-full mx-10" >
             <Slide>
               <div className="each-slide">
                 <div
@@ -154,13 +157,20 @@ const Home = () => {
           </div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-4xl">Plenty of custom textures, custom models, and splash texts you won’t find anywhere else. Oh, and it reduces rain particles without needing OptiFine :P</div>
+          <div className="font-semibold text-center text-4xl">
+            Plenty of custom textures, custom models, and splash texts you won’t
+            find anywhere else. Oh, and it reduces rain particles without
+            needing OptiFine :P
+          </div>
         </div>
       </div>
       <hr className="w-80 mx-auto" />
       <div className="my-10 flex">
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-4xl">The Official CaptainSparklez Texture Pack, used and approved by CaptainSparklez himself.</div>
+          <div className="font-semibold text-center text-4xl">
+            The Official CaptainSparklez Texture Pack, used and approved by
+            CaptainSparklez himself.
+          </div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
           <div>
@@ -182,7 +192,10 @@ const Home = () => {
           <div>Left Buttons</div>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-4xl">Community inspired and made. The perfect texture pack for any CaptainSparklez fan, loved by all.</div>
+          <div className="font-semibold text-center text-4xl">
+            Community inspired and made. The perfect texture pack for any
+            CaptainSparklez fan, loved by all.
+          </div>
         </div>
       </div>
       <hr className="w-80 mx-auto" />
