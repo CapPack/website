@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-row w-full">
+    <div className="flex flex-row w-full mr-">
       <div className="flex flex-row w-full text-2xl items-center">
         <img src={CapPackImage} alt="CapPack Logo" className="w-32 m-4" />
         <p>
@@ -47,7 +47,6 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-10 m-4"
-          style={{ width: "3.5rem" }}
         >
           <img
             src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"
