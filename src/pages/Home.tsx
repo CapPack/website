@@ -79,7 +79,7 @@ const Home = () => {
       <hr className="w-80 mx-auto" />
       <div className="my-10 flex">
         <div className="w-1/2">
-          <div className="slide-container h-full mx-10" >
+          <div className="slide-container h-full mx-10">
             <Slide>
               <div className="each-slide">
                 <div

@@ -32,9 +32,8 @@ type PackReleaseVersion =
   | "v1";
 type Link = string;
 
-const downloadsData: Record<
-  PackReleaseVersion,
-  Record<MinecraftVersion, Link>
+const downloadsData: Partial<
+  Record<PackReleaseVersion, Partial<Record<MinecraftVersion, Link>>>
 > = {
   v13: {
     Bedrock:
@@ -215,15 +214,17 @@ const Downloads = () => {
           </p>
           <div className="flex justify-center">
             <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
-              {Object.entries(downloadsData.v13).map(([version, link]) => (
-                <a
-                  key={version}
-                  href={link}
-                  className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white"
-                >
-                  {version}
-                </a>
-              ))}
+              {Object.entries(downloadsData.v13 || {}).map(
+                ([version, link]) => (
+                  <a
+                    key={version}
+                    href={link}
+                    className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white"
+                  >
+                    {version}
+                  </a>
+                ),
+              )}
             </div>
           </div>
         </div>
@@ -239,7 +240,7 @@ const Downloads = () => {
               <div className="flex justify-center">
                 <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
                   {Object.entries(
-                    downloadsData[release as PackReleaseVersion],
+                    downloadsData[release as PackReleaseVersion] || {},
                   ).map(([version, link]) => (
                     <a
                       key={version}
