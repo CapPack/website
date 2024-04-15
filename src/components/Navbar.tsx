@@ -46,12 +46,11 @@ const Navbar = () => {
           href="https://discord.gg/aDE8TYA"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-10 m-4 hover:w-11"
+          className="flex items-center justify-center w-10 m-4"
           style={{ width: "3.5rem" }}
         >
           <img
             src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"
-            className="w-full"
             alt="discord logo"
           />
         </a>
@@ -59,12 +58,10 @@ const Navbar = () => {
           href="https://github.com/CapPack/the-captainsparklez-texture-pack"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-10 m-4 hover:w-11"
-          style={{ width: "3.5rem" }}
+          className="flex items-center justify-center w-10 m-4"
         >
           <img
             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-            className="w-full"
             alt="github icon"
           />
         </a>
