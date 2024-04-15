@@ -23,24 +23,24 @@ const Navbar: React.FC = () => {
             Menu
           </button>
           <div className={`${isOpen ? "" : "hidden"} w-full`}>
-            <Link to="/" className={`text-center text-xl m-2 ${isActive("/")}`}>
+            <Link to="/" className={isActive("/")}>
               Home
             </Link>
             <Link
               to="/downloads"
-              className={`text-center text-xl m-2 ${isActive("/downloads")}`}
+              className={isActive("/downloads")}
             >
               Downloads
             </Link>
             <Link
               to="/version-compatibility"
-              className={`text-center text-xl m-2 ${isActive("/version-compatibility")}`}
+              className={isActive("/version-compatibility")}
             >
               Version Compatibility
             </Link>
             <Link
               to="/credits"
-              className={`text-center text-xl m-2 ${isActive("/credits")}`}
+              className={isActive("/credits")}
             >
               Credits
             </Link>
@@ -88,29 +88,29 @@ const Navbar: React.FC = () => {
           <div className="flex flex-row w-full text-xl items-center justify-end mr-4">
             <Link
               to="/"
-              className={`text-center ${isActive("/")}`}
-              style={{ width: "6rem" }}
+              className={`text-center mx-2 ${isActive("/")}`}
+              style={{ width: "4rem" }}
             >
               Home
             </Link>
             <Link
               to="/downloads"
-              className={`text-center ${isActive("/downloads")}`}
-              style={{ width: "9rem" }}
+              className={`text-center mx-2 ${isActive("/downloads")}`}
+              style={{ width: "7rem" }}
             >
               Downloads
             </Link>
             <Link
               to="/version-compatibility"
-              className={`text-center ${isActive("/version-compatibility")}`}
-              style={{ width: "14rem" }}
+              className={`text-center mx-2 ${isActive("/version-compatibility")}`}
+              style={{ width: "13rem" }}
             >
               Version Compatibility
             </Link>
             <Link
               to="/credits"
-              className={`text-center ${isActive("/credits")}`}
-              style={{ width: "7rem" }}
+              className={`text-center mx-2 ${isActive("/credits")}`}
+              style={{ width: "5rem" }}
             >
               Credits
             </Link>
