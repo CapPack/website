@@ -15,8 +15,7 @@ type MinecraftVersion =
   | "1.13 - 1.14.4"
   | "1.11 - 1.12.2"
   | "1.9 - 1.10.2"
-  | "1.6.1 - 1.8.9"
-  | undefined;
+  | "1.6.1 - 1.8.9";
 type PackReleaseVersion =
   | "v13"
   | "v12"
@@ -30,13 +29,12 @@ type PackReleaseVersion =
   | "v4"
   | "v3"
   | "v2"
-  | "v1"
-  | undefined;
+  | "v1";
 type Link = string;
 
 const downloadsData: Record<
-  PackReleaseVersion | undefined,
-  Record<MinecraftVersion | undefined, Link | undefined>
+  PackReleaseVersion,
+  Record<MinecraftVersion, Link>
 > = {
   v13: {
     Bedrock:
@@ -211,67 +209,52 @@ const Downloads = () => {
       </div>
 
       {latestReleaseSelected ? (
-  <div>
-    <p className="text-lg font-bold my-4 text-center">
-      Current latest release: v13
-    </p>
-    <div className="flex justify-center">
-      <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
-        {Object.entries(downloadsData.v13).map(([version, link]) => (
-          <React.Fragment key={version || 'missing'}>
-            {version && link ? (
-              <a
-                href={link}
-                className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white"
-              >
-                {version}
-              </a>
-            ) : (
-              <span className="px-4 py-2 bg-gray-300 text-gray-700">
-                {version || 'Missing Version'}
-              </span>
-            )}
-          </React.Fragment>
-        ))}
-      </div>
-    </div>
-  </div>
-) : (
-  <div>
-    {[...Object.keys(downloadsData)].map((release, index) => (
-      <div key={release}>
-        <h2
-          className={`text-lg font-bold my-4 ${index !== 0 ? "mt-12" : ""} text-center`}
-        >
-          {release}
-        </h2>
-        <div className="flex justify-center">
-          <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
-            {Object.entries(
-              downloadsData[release as PackReleaseVersion],
-            ).map(([version, link]) => (
-              <React.Fragment key={version || 'missing'}>
-                {version && link ? (
-                  <a
-                    href={link}
-                    className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white"
-                  >
-                    {version}
-                  </a>
-                ) : (
-                  <span className="px-4 py-2 bg-gray-300 text-gray-700">
-                    {version || 'Missing Version'}
-                  </span>
-                )}
-              </React.Fragment>
-            ))}
+        <div>
+          <p className="text-lg font-bold my-4 text-center">
+            Current latest release: v13
+          </p>
+          <div className="flex justify-center">
+            <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
+              {Object.entries(downloadsData.v13).map(([version, link]) => (
+                <a
+                  key={version}
+                  href={link}
+                  className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white"
+                >
+                  {version}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    ))}
-  </div>
-)}
-
+      ) : (
+        <div>
+          {[...Object.keys(downloadsData)].map((release, index) => (
+            <div key={release}>
+              <h2
+                className={`text-lg font-bold my-4 ${index !== 0 ? "mt-12" : ""} text-center`}
+              >
+                {release}
+              </h2>
+              <div className="flex justify-center">
+                <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
+                  {Object.entries(
+                    downloadsData[release as PackReleaseVersion],
+                  ).map(([version, link]) => (
+                    <a
+                      key={version}
+                      href={link}
+                      className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white"
+                    >
+                      {version}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
