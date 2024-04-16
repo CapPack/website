@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import DownloadModrinth from "../assets/DlOnModrinth.png";
 import DownloadCurseforge from "../assets/DlOnCurseforge.png";
 import DownloadGitHub from "../assets/DlOnGitHub.png";
@@ -194,7 +194,7 @@ const downloadsData: Partial<
   // },
 };
 
-const Downloads = () => {
+const Downloads: React.FC = () => {
   useEffect(() => {
     document.title = "Downloads - CapPack";
   }, []);
@@ -218,7 +218,7 @@ const Downloads = () => {
           className={`px-4 py-2 text-2xl ${!latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
           onClick={() => setLatestReleaseSelected(false)}
         >
-          Past releases
+          All releases
         </button>
       </div>
 
@@ -229,17 +229,67 @@ const Downloads = () => {
           </p>
           <div className="flex justify-center">
             <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
-              {Object.entries(downloadsData.v13 || {}).map(
-                ([version, link]) => (
-                  <a
-                    key={version}
-                    href={link}
-                    className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl"
-                  >
-                    {version}
-                  </a>
-                ),
-              )}
+              {Object.entries(downloadsData.v13!).map(([version, link]) => (
+                <a
+                  key={version}
+                  href={link}
+                  className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl"
+                >
+                  {version}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="bg-white py-4 flex justify-center">
+            <div className="flex flex-wrap justify-center max-w-screen-xl mx-auto">
+              <a
+                href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="m-4"
+              >
+                <img
+                  src={DownloadCurseforge}
+                  alt="Download on Curseforge"
+                  className="w-56"
+                />
+              </a>
+              <a
+                href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v13"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="m-4"
+              >
+                <img
+                  src={DownloadGitHub}
+                  alt="Download on GitHub"
+                  className="w-56"
+                />
+              </a>
+              <a
+                href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="m-4"
+              >
+                <img
+                  src={DownloadModrinth}
+                  alt="Download on Modrinth"
+                  className="w-56"
+                />
+              </a>
+              <a
+                href="https://www.planetminecraft.com/texture-pack/the-captainsparklez-texture-pack/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="m-4"
+              >
+                <img
+                  src={DownloadPlanetMinecraft}
+                  alt="Download on Planet Minecraft"
+                  className="w-56"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -247,83 +297,49 @@ const Downloads = () => {
         <div>
           {[...Object.keys(downloadsData)].map((release, index) => (
             <div key={release}>
-              <h2
-                className={`text-lg font-bold my-4 ${index !== 0 ? "mt-12" : ""} text-center`}
-              >
-                {release}
-              </h2>
-              <div className="flex justify-center">
-                <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
-                  {Object.entries(
-                    downloadsData[release as PackReleaseVersion] || {},
-                  ).map(([version, link]) => (
+              <div>
+                <h2
+                  className={`text-lg font-bold my-4 ${index !== 0 ? "mt-12" : ""} text-center`}
+                >
+                  {release}
+                </h2>
+                <div className="flex justify-center">
+                  <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
+                    {Object.entries(
+                      downloadsData[release as PackReleaseVersion]!,
+                    ).map(([version, link]) => (
+                      <a
+                        key={version}
+                        href={link}
+                        className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl"
+                      >
+                        {version}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                {/* Show GitHub download image under each past release */}
+                <div className="bg-white py-4 flex justify-center">
+                  <div className="flex flex-wrap justify-center max-w-screen-xl mx-auto">
                     <a
-                      key={version}
-                      href={link}
-                      className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl"
+                      href={`https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/${release}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="m-4"
                     >
-                      {version}
+                      <img
+                        src={DownloadGitHub}
+                        alt="Download on GitHub"
+                        className="w-56"
+                      />
                     </a>
-                  ))}
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
       )}
-      <div className="flex-grow"></div>
-      <div className="bg-white py-4 flex justify-center">
-        <div className="flex flex-wrap justify-center max-w-screen-xl mx-auto">
-          <a
-            href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="m-4"
-          >
-            <img
-              src={DownloadCurseforge}
-              alt="Download on Curseforge"
-              className="w-56"
-            />
-          </a>
-          <a
-            href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v13"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="m-4"
-          >
-            <img
-              src={DownloadGitHub}
-              alt="Download on GitHub"
-              className="w-56"
-            />
-          </a>
-          <a
-            href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="m-4"
-          >
-            <img
-              src={DownloadModrinth}
-              alt="Download on Modrinth"
-              className="w-56"
-            />
-          </a>
-          <a
-            href="https://www.planetminecraft.com/texture-pack/the-captainsparklez-texture-pack/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="m-4"
-          >
-            <img
-              src={DownloadPlanetMinecraft}
-              alt="Download on Planet Minecraft"
-              className="w-56"
-            />
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
