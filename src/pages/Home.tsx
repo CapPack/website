@@ -213,7 +213,10 @@ const Home = () => {
           </div>
           <hr className="w-80 mx-auto" />
           <div className="flex justify-center items-center font-semibold text-center text-4xl p-6">
-            <div>Buttons</div>
+          <Button
+              text="Download Here"
+              link="https://cappack.page/downloads"
+            />
           </div>
         </div>
       ) : (
