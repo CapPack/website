@@ -23,7 +23,7 @@ const Home = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 1028px)" });
 
   return (
-    <div className="text-center">
+    <div className="text-center font-quicksand text-xl">
       <p className="m-10 font-bold text-6xl">CapPack</p>
       <p className="m-10 font-semibold text-2xl">
         The Official CaptainSparklez Texture Pack
@@ -219,7 +219,10 @@ const Home = () => {
       ) : (
         <div className="my-8 mx-4 flex">
           <div className="w-1/2 flex justify-center items-center font-semibold text-center text-4xl p-6">
-            <div>Buttons</div>
+            <Button
+              text="Download Here"
+              link="https://cappack.page/downloads"
+            />
           </div>
           <div className="w-1/2 flex justify-center items-center font-semibold text-center text-4xl p-6">
             Community inspired and made. The perfect texture pack for any
@@ -227,8 +230,26 @@ const Home = () => {
           </div>
         </div>
       )}
-
       <hr className="w-80 mx-auto" />
+      <div className="mx-10">
+        <p className="mt-10">
+          <b>License:</b>
+        </p>
+        <p>
+          You have the right to share and adapt this work, however, you{" "}
+          <b>must</b> provide the name of the creator (ThermicWaffle), a
+          copyright notice, a license notice, and a link to this work. You must{" "}
+          <b>also</b> distribute your adaptations under the same license as the
+          original. You <b>may not</b> use this work for commercial purposes or
+          make a profit off of it.{" "}
+          <a
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            className="font-bold underline hover:no-underline"
+          >
+            (CC BY-NC-SA 4.0)
+          </a>
+        </p>
+      </div>
     </div>
   );
 };

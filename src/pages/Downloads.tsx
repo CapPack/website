@@ -190,7 +190,7 @@ const Downloads = () => {
   const [latestReleaseSelected, setLatestReleaseSelected] = useState(true);
 
   return (
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col items-center text-center font-quicksand">
       <h1 className="text-4xl font-bold mt-10 mb-4">Downloads</h1>
       <h2 className="text-xl font-semibold mb-10">
         The download buttons not named "Bedrock" are for Java Edition{" "}
@@ -198,13 +198,13 @@ const Downloads = () => {
       </h2>
       <div className="flex gap-4 my-4 ">
         <button
-          className={`px-4 py-2 ${latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
+          className={`px-4 py-2 text-2xl ${latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
           onClick={() => setLatestReleaseSelected(true)}
         >
           Latest release
         </button>
         <button
-          className={`px-4 py-2 ${!latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
+          className={`px-4 py-2 text-2xl ${!latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
           onClick={() => setLatestReleaseSelected(false)}
         >
           Past releases
@@ -223,7 +223,7 @@ const Downloads = () => {
                   <a
                     key={version}
                     href={link}
-                    className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white"
+                    className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl"
                   >
                     {version}
                   </a>
@@ -249,7 +249,7 @@ const Downloads = () => {
                     <a
                       key={version}
                       href={link}
-                      className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white"
+                      className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl"
                     >
                       {version}
                     </a>
@@ -272,7 +272,7 @@ const Downloads = () => {
             <img
               src={DownloadCurseforge}
               alt="Download on Curseforge"
-              className="w-48"
+              className="w-56"
             />
           </a>
           <a
@@ -284,7 +284,7 @@ const Downloads = () => {
             <img
               src={DownloadGitHub}
               alt="Download on GitHub"
-              className="w-48"
+              className="w-56"
             />
           </a>
           <a
@@ -296,7 +296,7 @@ const Downloads = () => {
             <img
               src={DownloadModrinth}
               alt="Download on Modrinth"
-              className="w-48"
+              className="w-56"
             />
           </a>
           <a
@@ -308,7 +308,7 @@ const Downloads = () => {
             <img
               src={DownloadPlanetMinecraft}
               alt="Download on Planet Minecraft"
-              className="w-48"
+              className="w-56"
             />
           </a>
         </div>
