@@ -42,144 +42,155 @@ const downloadsData: Partial<
   v13: {
     Bedrock:
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/Bedrock.CapPack.v13.mcpack",
-    "1.6.1 - 1.8.9":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.6.1.-.1.8.8.CapPack.v13.zip",
-    "1.9 - 1.10.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.9.-.1.10.2.CapPack.v13.zip",
-    "1.11 - 1.12.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.11.-.1.12.2.CapPack.v13.zip",
-    "1.13 - 1.14.4":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.13.-.1.14.4.CapPack.v13.zip",
-    "1.15 - 1.16.1":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.15.-.1.16.1.CapPack.v13.zip",
-    "1.16.2 - 1.16.5":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.16.2.-.1.16.5.CapPack.v13.zip",
-    "1.17 - 1.17.1":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.17.-.1.17.1.CapPack.v13.zip",
-    "1.18 - 1.18.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.18.-.1.18.2.CapPack.v13.zip",
-    "1.19 - 1.19.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.19.-.1.19.2.CapPack.v13.zip",
-    "1.19.3":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.19.3.CapPack.v13.zip",
-    "1.19.4":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.19.4.CapPack.v13.zip",
-    "1.20 - 1.20.1":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.20.-.1.20.1.CapPack.v13.zip",
-    "1.20.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.20.2.CapPack.v13.zip",
     "1.20.3 - 1.20.4":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.20.3.-.1.20.4.CapPack.v13.zip",
+    "1.20.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.20.2.CapPack.v13.zip",
+    "1.20 - 1.20.1":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.20.-.1.20.1.CapPack.v13.zip",
+    "1.19.4":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.19.4.CapPack.v13.zip",
+    "1.19.3":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.19.3.CapPack.v13.zip",
+    "1.19 - 1.19.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.19.-.1.19.2.CapPack.v13.zip",
+    "1.18 - 1.18.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.18.-.1.18.2.CapPack.v13.zip",
+    "1.17 - 1.17.1":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.17.-.1.17.1.CapPack.v13.zip",
+    "1.16.2 - 1.16.5":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.16.2.-.1.16.5.CapPack.v13.zip",
+    "1.15 - 1.16.1":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.15.-.1.16.1.CapPack.v13.zip",
+    "1.13 - 1.14.4":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.13.-.1.14.4.CapPack.v13.zip",
+    "1.11 - 1.12.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.11.-.1.12.2.CapPack.v13.zip",
+    "1.9 - 1.10.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.9.-.1.10.2.CapPack.v13.zip",
+    "1.6.1 - 1.8.9":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.6.1.-.1.8.8.CapPack.v13.zip",
   },
   v12: {
     Bedrock:
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/Bedrock.CapPack.v12.mcpack",
-    "1.6.1 - 1.8.9":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.6.1.-.1.8.9.CapPack.v12.zip",
-    "1.9 - 1.10.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.9.-.1.10.2.CapPack.v12.zip",
-    "1.11 - 1.12.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.11.-.1.12.2.CapPack.v12.zip",
-    "1.13 - 1.14.4":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.13.-.1.14.4.CapPack.v12.zip",
-    "1.15 - 1.16.1":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.15.-.1.16.1.CapPack.v12.zip",
-    "1.16.2 - 1.16.5":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.16.2.-.1.16.5.CapPack.v12.zip",
-    "1.17 - 1.17.1":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.17.-.1.17.1.CapPack.v12.zip",
-    "1.18 - 1.18.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.18.-.1.18.2.CapPack.v12.zip",
-    "1.19 - 1.19.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.19.-.1.19.2.CapPack.v12.zip",
-    "1.19.3":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.19.3.CapPack.v12.zip",
-    "1.19.4":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.19.4.CapPack.v12.zip",
-    "1.20 - 1.20.1":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.20.-.1.20.1.CapPack.v12.zip",
-    "1.20.2":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.20.2.CapPack.v12.zip",
     "1.20.3 - 1.20.4":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.20.3.-.1.20.4.CapPack.v12.zip",
+    "1.20.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.20.2.CapPack.v12.zip",
+    "1.20 - 1.20.1":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.20.-.1.20.1.CapPack.v12.zip",
+    "1.19.4":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.19.4.CapPack.v12.zip",
+    "1.19.3":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.19.3.CapPack.v12.zip",
+    "1.19 - 1.19.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.19.-.1.19.2.CapPack.v12.zip",
+    "1.18 - 1.18.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.18.-.1.18.2.CapPack.v12.zip",
+    "1.17 - 1.17.1":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.17.-.1.17.1.CapPack.v12.zip",
+    "1.16.2 - 1.16.5":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.16.2.-.1.16.5.CapPack.v12.zip",
+    "1.15 - 1.16.1":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.15.-.1.16.1.CapPack.v12.zip",
+    "1.13 - 1.14.4":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.13.-.1.14.4.CapPack.v12.zip",
+    "1.11 - 1.12.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.11.-.1.12.2.CapPack.v12.zip",
+    "1.9 - 1.10.2":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.9.-.1.10.2.CapPack.v12.zip",
+    "1.6.1 - 1.8.9":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.6.1.-.1.8.9.CapPack.v12.zip",
   },
   // v11: {
-  //   "1.6.1 - 1.8.9": "",
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
-  //   "1.15 - 1.16.1": "",
-  //   "1.16.2 - 1.16.5": "",
-  //   "1.17 - 1.17.1": "",
-  //   "1.18 - 1.18.2": "",
+  //   Bedrock: "",
   //   "1.19 - 1.19.2": "",
+  //   "1.18 - 1.18.2": "",
+  //   "1.17 - 1.17.1": "",
+  //   "1.16.2 - 1.16.5": "",
+  //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
+  //   "1.6.1 - 1.8.9": "",
   // },
   // v10: {
-  //   "1.6.1 - 1.8.9": "",
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
-  //   "1.15 - 1.16.1": "",
-  //   "1.16.2 - 1.16.5": "",
-  //   "1.17 - 1.17.1": "",
-  //   "1.18 - 1.18.2": "",
+  //   Bedrock: "",
   //   "1.19 - 1.19.2": "",
+  //   "1.18 - 1.18.2": "",
+  //   "1.17 - 1.17.1": "",
+  //   "1.16.2 - 1.16.5": "",
+  //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
+  //   "1.6.1 - 1.8.9": "",
   // },
   // v9: {
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
-  //   "1.15 - 1.16.1": "",
-  //   "1.16.2 - 1.16.5": "",
-  //   "1.17 - 1.17.1": "",
+  //   Bedrock: "",
   //   "1.18 - 1.18.2": "",
+  //   "1.17 - 1.17.1": "",
+  //   "1.16.2 - 1.16.5": "",
+  //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
   // },
   // v8: {
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
-  //   "1.15 - 1.16.1": "",
+  //   Bedrock: "",
   //   "1.16.2 - 1.16.5": "",
+  //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
   // },
   // v7: {
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
+  //   Bedrock: "",
   //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
   // },
   // v6: {
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
+  //   Bedrock: "",
   //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
   // },
   // v5: {
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
+  //   Bedrock: "",
   //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
   // },
   // v4: {
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
+  //   Bedrock: "",
   //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
   // },
   // v3: {
-  //   "1.9 - 1.10.2": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
+  //   Bedrock: "",
   //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
+  //   "1.9 - 1.10.2": "",
   // },
   // v2: {
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
+  //   Bedrock: "",
   //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
   // },
   // v1: {
-  //   "1.11 - 1.12.2": "",
-  //   "1.13 - 1.14.4": "",
+  //   Bedrock: "",
   //   "1.15 - 1.16.1": "",
+  //   "1.13 - 1.14.4": "",
+  //   "1.11 - 1.12.2": "",
   // },
 };
 

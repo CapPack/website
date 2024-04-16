@@ -23,7 +23,7 @@ const Home = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 1028px)" });
 
   return (
-    <div className="text-center font-quicksand text-xl">
+    <div className="text-center text-xl">
       <p className="m-10 font-bold text-6xl">CapPack</p>
       <p className="m-10 font-semibold text-2xl">
         The Official CaptainSparklez Texture Pack

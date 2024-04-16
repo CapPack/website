@@ -13,9 +13,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div
-      className={`flex font-quicksand ${isMobile ? "flex-col" : "flex-row"} w-full`}
-    >
+    <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
       <div
         className={`flex w-full items-center text-2xl ${isMobile ? "bg-gray-200 justify-between" : ""}`}
       >

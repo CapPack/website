@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        quicksand: ["Quicksand", "sans-serif"],
+        jost: ["Jost Variable", "Raleway Variable", "sans-serif"],
       },
       colors: {
         "thermic-orange": "#eb3318",

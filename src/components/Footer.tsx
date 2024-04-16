@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="text-center font-quicksand text-xl">
+    <div className="text-center text-xl">
       <div className="mx-10">
         <p className="mt-10">
           <b>Buy us a coffee!</b>
@@ -17,7 +17,7 @@ const Footer = () => {
           anything means a lot! Thanks!
         </p>
       </div>
-      <div className="text-4xl text-center items-center p-6 font-quicksand font-semibold">
+      <div className="text-4xl text-center items-center p-6 font-semibold">
         <p>
           Made by{" "}
           <a

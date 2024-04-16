@@ -1,3 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "@fontsource-variable/jost";
+@import "@fontsource-variable/jost/wght.css";
+@import "@fontsource-variable/jost/wght-italic.css";
+@import "@fontsource-variable/raleway";
+@import "@fontsource-variable/raleway/wght.css";
+@import "@fontsource-variable/raleway/wght-italic.css";
