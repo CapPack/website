@@ -89,7 +89,7 @@ const Home = () => {
                     }}
                   />
                 </div>
-              )
+              ),
             )}
           </Slide>
         </div>
