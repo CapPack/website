@@ -8,7 +8,7 @@ const Footer = () => {
         <p>
           Please{" "}
           <a
-            href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            href="https://buymeacoffee.com/thermicwaffle"
             className="font-bold underline hover:no-underline"
           >
             leave us a tip
