@@ -71,7 +71,7 @@ const Home = () => {
       <div className="my-8 mx-4 flex">
         <div className="w-1/2">
         <div
-          className=""
+          className="mx-auto"
           style={{
             maxWidth: `${maxSlideshowWidth}px`,
             maxHeight: `${maxSlideshowHeight}px`,
@@ -109,7 +109,7 @@ const Home = () => {
         </div>
         <div className="w-1/2">
         <div
-          className=""
+          className="mx-auto"
           style={{
             maxWidth: `${maxVideoWidth}px`,
             maxHeight: `${maxVideoHeight}px`,
