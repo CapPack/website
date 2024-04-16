@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import DownloadModrinth from "../assets/DlOnModrinth.png";
+import DownloadCurseforge from "../assets/DlOnCurseforge.png";
+import DownloadGitHub from "../assets/DlOnGitHub.png";
+import DownloadPlanetMinecraft from "../assets/DlOnPlanetMinecraft.png";
 
 type MinecraftVersion =
   | "Bedrock"
@@ -187,7 +191,7 @@ const Downloads = () => {
 
   return (
     <div className="flex flex-col items-center text-center">
-      <h1 className="text-4xl font-bold mb-4">Downloads</h1>
+      <h1 className="text-4xl font-bold mt-10 mb-4">Downloads</h1>
       <h2 className="text-xl font-semibold mb-10">
         The download buttons not named "Bedrock" are for Java Edition{" "}
         <u>only</u>
@@ -256,6 +260,59 @@ const Downloads = () => {
           ))}
         </div>
       )}
+      <div className="flex-grow"></div>
+      <div className="bg-white py-4 flex justify-center">
+        <div className="flex flex-wrap justify-center max-w-screen-xl mx-auto">
+          <a
+            href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="m-4"
+          >
+            <img
+              src={DownloadCurseforge}
+              alt="Download on Curseforge"
+              className="w-48"
+            />
+          </a>
+          <a
+            href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v13"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="m-4"
+          >
+            <img
+              src={DownloadGitHub}
+              alt="Download on GitHub"
+              className="w-48"
+            />
+          </a>
+          <a
+            href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="m-4"
+          >
+            <img
+              src={DownloadModrinth}
+              alt="Download on Modrinth"
+              className="w-48"
+            />
+          </a>
+          <a
+            href="https://www.planetminecraft.com/texture-pack/the-captainsparklez-texture-pack/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="m-4"
+          >
+            <img
+              src={DownloadPlanetMinecraft}
+              alt="Download on Planet Minecraft"
+              className="w-48"
+            />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
