@@ -69,8 +69,9 @@ const Home = () => {
       </div>
       <hr className="w-80 mx-auto" />
       <div className="my-8 mx-4 flex">
+        <div className="w-1/2">
         <div
-          className="w-1/2"
+          className=""
           style={{
             maxWidth: `${maxSlideshowWidth}px`,
             maxHeight: `${maxSlideshowHeight}px`,
@@ -93,6 +94,7 @@ const Home = () => {
             )}
           </Slide>
         </div>
+        </div>
         <div className="w-1/2 flex justify-center items-center font-semibold text-center text-4xl p-6">
           Plenty of custom textures, custom models, and splash texts you won’t
           find anywhere else. Oh, and it reduces rain particles without needing
@@ -105,8 +107,9 @@ const Home = () => {
           The Official CaptainSparklez Texture Pack, used and approved by
           CaptainSparklez himself.
         </div>
+        <div className="w-1/2">
         <div
-          className="w-1/2"
+          className=""
           style={{
             maxWidth: `${maxVideoWidth}px`,
             maxHeight: `${maxVideoHeight}px`,
@@ -122,6 +125,7 @@ const Home = () => {
               allowFullScreen
             ></iframe>
           </div>
+        </div>
         </div>
       </div>
       <hr className="w-80 mx-auto" />
