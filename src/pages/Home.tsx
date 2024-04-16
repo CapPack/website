@@ -12,19 +12,12 @@ const Home = () => {
   useEffect(() => {
     document.title = "Home - CapPack";
   }, []);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const slideshowAspectRatio = 16 / 9;
+  const maxSlideshowWidth = 800;
+  const maxSlideshowHeight = maxSlideshowWidth / slideshowAspectRatio;
+  const maxVideoWidth = 800;
+  const maxVideoHeight = maxVideoWidth / (16 / 9);
 
   return (
     <div className="text-center">
@@ -53,23 +46,21 @@ const Home = () => {
         </p>
       </div>
       <div className="m-10">
-        <span className="underline hover:no-underline">
+        <span className="underline hover:no-underline text-blue-600">
           <a
             href="https://www.optifine.net/home"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600"
           >
             OptiFine
           </a>
         </span>{" "}
         or{" "}
-        <span className="underline hover:no-underline">
+        <span className="underline hover:no-underline text-blue-600">
           <a
             href="https://modrinth.com/mod/entity-model-features"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600"
           >
             Entity Model Features
           </a>
@@ -77,125 +68,70 @@ const Home = () => {
         is <b>recommended</b> for the full experience.
       </div>
       <hr className="w-80 mx-auto" />
-      <div className="my-10 flex">
-        <div className="w-1/2">
-          <div className="slide-container h-full mx-10">
-            <Slide>
-              <div className="each-slide">
-                <div
-                  className="h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${image1})`,
-                    width: "100%",
-                    paddingTop: "56.25%",
-                  }}
-                >
-                  <span className="hidden">Slide 1</span>
+      <div className="my-8 mx-4 flex">
+        <div
+          className="w-1/2"
+          style={{
+            maxWidth: `${maxSlideshowWidth}px`,
+            maxHeight: `${maxSlideshowHeight}px`,
+          }}
+        >
+          <Slide>
+            {[image1, image2, image3, image4, image5, image6].map(
+              (image, index) => (
+                <div key={index} className="each-slide">
+                  <img
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                    }}
+                  />
                 </div>
-              </div>
-              <div className="each-slide">
-                <div
-                  className="h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${image2})`,
-                    width: "100%",
-                    paddingTop: "56.25%",
-                  }}
-                >
-                  <span className="hidden">Slide 2</span>
-                </div>
-              </div>
-              <div className="each-slide">
-                <div
-                  className="h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${image3})`,
-                    width: "100%",
-                    paddingTop: "56.25%",
-                  }}
-                >
-                  <span className="hidden">Slide 3</span>
-                </div>
-              </div>
-              <div className="each-slide">
-                <div
-                  className="h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${image4})`,
-                    width: "100%",
-                    paddingTop: "56.25%",
-                  }}
-                >
-                  <span className="hidden">Slide 4</span>
-                </div>
-              </div>
-              <div className="each-slide">
-                <div
-                  className="h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${image5})`,
-                    width: "100%",
-                    paddingTop: "56.25%",
-                  }}
-                >
-                  <span className="hidden">Slide 5</span>
-                </div>
-              </div>
-              <div className="each-slide">
-                <div
-                  className="h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${image6})`,
-                    width: "100%",
-                    paddingTop: "56.25%",
-                  }}
-                >
-                  <span className="hidden">Slide 6</span>
-                </div>
-              </div>
-            </Slide>
-          </div>
+              )
+            )}
+          </Slide>
         </div>
-        <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-4xl">
-            Plenty of custom textures, custom models, and splash texts you won’t
-            find anywhere else. Oh, and it reduces rain particles without
-            needing OptiFine :P
-          </div>
+        <div className="w-1/2 flex justify-center items-center font-semibold text-center text-4xl p-6">
+          Plenty of custom textures, custom models, and splash texts you won’t
+          find anywhere else. Oh, and it reduces rain particles without needing
+          OptiFine :P
         </div>
       </div>
       <hr className="w-80 mx-auto" />
-      <div className="my-10 flex">
-        <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-4xl">
-            The Official CaptainSparklez Texture Pack, used and approved by
-            CaptainSparklez himself.
-          </div>
+      <div className="my-8 mx-4 flex">
+        <div className="w-1/2 flex justify-center items-center font-semibold text-center text-4xl p-6">
+          The Official CaptainSparklez Texture Pack, used and approved by
+          CaptainSparklez himself.
         </div>
-        <div className="w-1/2 flex justify-center items-center">
-          <div>
+        <div
+          className="w-1/2"
+          style={{
+            maxWidth: `${maxVideoWidth}px`,
+            maxHeight: `${maxVideoHeight}px`,
+          }}
+        >
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
-              width={windowWidth > 701 ? 701 : windowWidth}
-              height={(windowWidth > 701 ? 701 : windowWidth) * (394 / 701)}
-              src="https://www.youtube.com/embed/bzWLMkoM9ks"
-              title="Captain Approved Texture Pack"
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/bzWLMkoM9ks?si=DB0xzmiPg2ry2iv5"
+              title="YouTube video player"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
           </div>
         </div>
       </div>
       <hr className="w-80 mx-auto" />
-      <div className="my-10 flex">
-        <div className="w-1/2">
+      <div className="my-8 mx-4 flex">
+        <div className="w-1/2 flex justify-center items-center font-semibold text-center text-4xl p-6">
           <div>Left Buttons</div>
         </div>
-        <div className="w-1/2 flex justify-center items-center">
-          <div className="font-semibold text-center text-4xl">
-            Community inspired and made. The perfect texture pack for any
-            CaptainSparklez fan, loved by all.
-          </div>
+        <div className="w-1/2 flex justify-center items-center font-semibold text-center text-4xl p-6">
+          Community inspired and made. The perfect texture pack for any
+          CaptainSparklez fan, loved by all.
         </div>
       </div>
       <hr className="w-80 mx-auto" />
