@@ -70,6 +70,53 @@ const Home = () => {
           </a>
         </span>{" "}
         is <b>recommended</b> for the full experience.
+        <div className="flex flex-row justify-center my-8">
+          <a
+            href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases"
+            className="mx-2"
+          >
+            <img
+              alt="GitHub Downloads (all assets, all releases)"
+              src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/total?style=for-the-badge&logo=github&label=all%20releases"
+            />
+          </a>
+          <a
+            href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v13"
+            className="mx-2"
+          >
+            <img
+              alt="GitHub Downloads (all assets, latest release)"
+              src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/latest/total?sort=date&style=for-the-badge&logo=github&label=latest%20release"
+            />
+          </a>
+          <a
+            href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20"
+            className="mx-2"
+          >
+            <img
+              alt="CurseForge Downloads (Java Edition)"
+              src="https://img.shields.io/curseforge/dt/546646?style=for-the-badge&logo=curseforge&label=Java%20Edition"
+            />
+          </a>
+          <a
+            href="https://www.curseforge.com/minecraft-bedrock/addons/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20"
+            className="mx-2"
+          >
+            <img
+              alt="CurseForge Downloads (Bedrock Edition)"
+              src="https://img.shields.io/curseforge/dt/634015?style=for-the-badge&logo=curseforge&label=Bedrock%20Edition"
+            />
+          </a>
+          <a
+            href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack/versions"
+            className="mx-2"
+          >
+            <img
+              alt="Modrinth Downloads (Both editions)"
+              src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Both%20editions"
+            />
+          </a>
+        </div>
       </div>
       <hr className="w-80 mx-auto" />
 

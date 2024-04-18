@@ -201,12 +201,59 @@ const Downloads: React.FC = () => {
   const [latestReleaseSelected, setLatestReleaseSelected] = useState(true);
 
   return (
-    <div className="flex flex-col items-center text-center font-quicksand">
+    <div className="flex flex-col items-center text-center">
       <h1 className="text-4xl font-bold mt-10 mb-4">Downloads</h1>
-      <h2 className="text-xl font-semibold mb-10">
+      <h2 className="text-xl font-semibold">
         The download buttons not named "Bedrock" are for Java Edition{" "}
         <u>only</u>
       </h2>
+      <div className="flex flex-row justify-center my-8">
+        <a
+          href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases"
+          className="mx-2"
+        >
+          <img
+            alt="GitHub Downloads (all assets, all releases)"
+            src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/total?style=for-the-badge&logo=github&label=all%20releases"
+          />
+        </a>
+        <a
+          href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v13"
+          className="mx-2"
+        >
+          <img
+            alt="GitHub Downloads (all assets, latest release)"
+            src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/latest/total?sort=date&style=for-the-badge&logo=github&label=latest%20release"
+          />
+        </a>
+        <a
+          href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20"
+          className="mx-2"
+        >
+          <img
+            alt="CurseForge Downloads (Java Edition)"
+            src="https://img.shields.io/curseforge/dt/546646?style=for-the-badge&logo=curseforge&label=Java%20Edition"
+          />
+        </a>
+        <a
+          href="https://www.curseforge.com/minecraft-bedrock/addons/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20"
+          className="mx-2"
+        >
+          <img
+            alt="CurseForge Downloads (Bedrock Edition)"
+            src="https://img.shields.io/curseforge/dt/634015?style=for-the-badge&logo=curseforge&label=Bedrock%20Edition"
+          />
+        </a>
+        <a
+          href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack/versions"
+          className="mx-2"
+        >
+          <img
+            alt="Modrinth Downloads (Both editions)"
+            src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Both%20editions"
+          />
+        </a>
+      </div>
       <div className="flex gap-4 my-4 ">
         <button
           className={`px-4 py-2 text-2xl ${latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
