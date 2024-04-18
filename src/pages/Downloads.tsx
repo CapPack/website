@@ -210,7 +210,7 @@ const Downloads: React.FC = () => {
       <div className="flex flex-row justify-center my-8">
         <a
           href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases"
-          className="mx-2"
+          className="m-2"
         >
           <img
             alt="GitHub Downloads (all assets, all releases)"
@@ -219,7 +219,7 @@ const Downloads: React.FC = () => {
         </a>
         <a
           href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v13"
-          className="mx-2"
+          className="m-2"
         >
           <img
             alt="GitHub Downloads (all assets, latest release)"
@@ -228,7 +228,7 @@ const Downloads: React.FC = () => {
         </a>
         <a
           href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20"
-          className="mx-2"
+          className="m-2"
         >
           <img
             alt="CurseForge Downloads (Java Edition)"
@@ -237,7 +237,7 @@ const Downloads: React.FC = () => {
         </a>
         <a
           href="https://www.curseforge.com/minecraft-bedrock/addons/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20"
-          className="mx-2"
+          className="m-2"
         >
           <img
             alt="CurseForge Downloads (Bedrock Edition)"
@@ -246,7 +246,7 @@ const Downloads: React.FC = () => {
         </a>
         <a
           href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack/versions"
-          className="mx-2"
+          className="m-2"
         >
           <img
             alt="Modrinth Downloads (Both editions)"
