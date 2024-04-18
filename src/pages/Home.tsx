@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { useMediaQuery } from "react-responsive";
+import isMobile from "../components/isMobile";
 import image1 from "../assets/image1.png";
 import image2 from "../assets/image2.png";
 import image3 from "../assets/image3.png";
@@ -20,7 +20,6 @@ const Home = () => {
   const maxSlideshowHeight = maxSlideshowWidth / slideshowAspectRatio;
   const maxVideoWidth = 800;
   const maxVideoHeight = maxVideoWidth / (16 / 9);
-  const isMobile = useMediaQuery({ query: "(max-width: 1028px)" });
 
   return (
     <div className="text-center text-xl">
