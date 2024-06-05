@@ -207,7 +207,7 @@ const Downloads: React.FC = () => {
         The download buttons not named "Bedrock" are for Java Edition{" "}
         <u>only</u>
       </h2>
-      <div className="flex flex-row justify-center my-8">
+      <div className="flex flex-row flex-wrap justify-center my-8">
         <a
           href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases"
           className="m-2"
