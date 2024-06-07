@@ -300,7 +300,6 @@ const Home = () => {
           </a>
         </p>
       </div>
-      <meta name="cf-2fa-verify" content="HuFJ0gkgTFi6PkBAvMwO"/>
     </div>
   );
 };
