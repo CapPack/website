@@ -312,11 +312,11 @@ const Downloads: React.FC = () => {
       {latestReleaseSelected ? (
         <div>
           <p className="text-lg font-bold my-4 text-center">
-            Current latest release: v13
+            Current latest release: v14
           </p>
           <div className="flex justify-center">
             <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
-              {Object.entries(downloadsData.v13!).map(([version, link]) => (
+              {Object.entries(downloadsData.v14!).map(([version, link]) => (
                 <a
                   key={version}
                   href={link}
