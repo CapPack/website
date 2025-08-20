@@ -81,7 +81,7 @@ const Home = () => {
             />
           </a>
           <a
-            href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v13"
+            href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v14"
             className="m-2"
           >
             <img
