@@ -342,7 +342,7 @@ const Downloads: React.FC = () => {
                 />
               </a>
               <a
-                href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v13"
+                href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v14"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="m-4"
