@@ -289,8 +289,8 @@ const Downloads: React.FC = () => {
           className="m-2"
         >
           <img
-            alt="Modrinth Downloads (Both editions)"
-            src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Both%20editions"
+            alt="Modrinth Downloads"
+            src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Java%20Edition"
           />
         </a>
       </div>
