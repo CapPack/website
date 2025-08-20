@@ -113,7 +113,7 @@ const Home = () => {
           >
             <img
               alt="Modrinth Downloads (Both editions)"
-              src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Both%20editions"
+              src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Java%20Edition"
             />
           </a>
         </div>
