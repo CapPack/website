@@ -5,7 +5,7 @@ import DownloadGitHub from "../assets/DlOnGitHub.png";
 import DownloadPlanetMinecraft from "../assets/DlOnPlanetMinecraft.png";
 
 type MinecraftVersion =
-  | "Bedrock"
+  | "Bedrock 1.21.101"
   | "1.21.6 - 1.21.8"
   | "1.20.5 - 1.21.5"
   | "1.20.3 - 1.20.4"
