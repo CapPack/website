@@ -50,7 +50,7 @@ const downloadsData: Partial<
   Record<PackReleaseVersion, Partial<Record<MinecraftVersion, Link>>>
 > = {
   v14: {
-    "Bedrock 1.21.101": 
+    Bedrock "1.21.101": 
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.1.21.101.CapPack.v14.mcpack",
     "1.21.6 - 1.21.8":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.21.6.-.1.21.8.CapPack.v14.zip",
