@@ -5,7 +5,11 @@ import DownloadGitHub from "../assets/DlOnGitHub.png";
 import DownloadPlanetMinecraft from "../assets/DlOnPlanetMinecraft.png";
 
 type MinecraftVersion =
-  | "Bedrock"
+  | "Bedrock 1.21.101"
+  | "Bedrock 1.20.51"
+  | "Bedrock 1.20.31"
+  | "Bedrock 1.19.22"
+  | "Bedrock 1.19.0"
   | "1.21.6 - 1.21.8"
   | "1.20.5 - 1.21.5"
   | "1.20.3 - 1.20.4"
@@ -46,8 +50,8 @@ const downloadsData: Partial<
   Record<PackReleaseVersion, Partial<Record<MinecraftVersion, Link>>>
 > = {
   v14: {
-    "Bedrock": 
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.CapPack.mcpack",
+    "Bedrock 1.21.101": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.1.21.101.CapPack.v14.mcpack",
     "1.21.6 - 1.21.8":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.21.6.-.1.21.8.CapPack.v14.zip",
     "1.20.5 - 1.21.5":
@@ -80,8 +84,8 @@ const downloadsData: Partial<
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.6.1.-.1.8.9.CapPack.v14.zip",
   },
   v13: {
-    Bedrock:
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/Bedrock.CapPack.v13.mcpack",
+    "Bedrock 1.20.51":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/Bedrock.1.20.51.CapPack.v13.mcpack",
     "1.20.3 - 1.20.4":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.20.3.-.1.20.4.CapPack.v13.zip",
     "1.20.2":
@@ -114,8 +118,8 @@ const downloadsData: Partial<
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v13/1.6.1.-.1.8.8.CapPack.v13.zip",
   },
   v12: {
-    Bedrock:
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/Bedrock.CapPack.v12.mcpack",
+    "Bedrock 1.20.31":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/Bedrock.1.20.31.CapPack.v12.mcpack",
     "1.20.3 - 1.20.4":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.20.3.-.1.20.4.CapPack.v12.zip",
     "1.20.2":
@@ -145,29 +149,49 @@ const downloadsData: Partial<
     "1.6.1 - 1.8.9":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v12/1.6.1.-.1.8.9.CapPack.v12.zip",
   },
-  // v11: {
-  //   Bedrock: "",
-  //   "1.19 - 1.19.2": "",
-  //   "1.18 - 1.18.2": "",
-  //   "1.17 - 1.17.1": "",
-  //   "1.16.2 - 1.16.5": "",
-  //   "1.15 - 1.16.1": "",
-  //   "1.13 - 1.14.4": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.9 - 1.10.2": "",
-  //   "1.6.1 - 1.8.9": "",
-  // },
-  // v10: {
-  //   Bedrock: "",
-  //   "1.19 - 1.19.2": "",
-  //   "1.18 - 1.18.2": "",
-  //   "1.17 - 1.17.1": "",
-  //   "1.16.2 - 1.16.5": "",
-  //   "1.15 - 1.16.1": "",
-  //   "1.13 - 1.14.4": "",
-  //   "1.11 - 1.12.2": "",
-  //   "1.9 - 1.10.2": "",
-  //   "1.6.1 - 1.8.9": "",
+  v11: {
+    "Bedrock 1.19.22": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/Bedrock.1.19.22.CapPack.v11.mcpack",
+    "1.19 - 1.19.2": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.19.-1.19.2.CapPack.v11.zip",
+    "1.18 - 1.18.2": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.18.-.1.18.2.CapPack.v11.zip",
+    "1.17 - 1.17.1": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.17.-.1.17.1.CapPack.v11.zip",
+    "1.16.2 - 1.16.5": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.16.2.-.1.16.5.CapPack.v11.zip",
+    "1.15 - 1.16.1": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.15.-.1.16.1.CapPack.v11.zip",
+    "1.13 - 1.14.4": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.13.-.1.14.4.CapPack.v11.zip",
+    "1.11 - 1.12.2": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.11.-.1.12.2.CapPack.v11.zip",
+    "1.9 - 1.10.2": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.9.-.1.10.2.CapPack.v11.zip",
+    "1.6.1 - 1.8.9": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v11/1.6.1.-.1.8.9.CapPack.v11.zip",
+  },
+  v10: {
+    "Bedrock 1.19.0": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/Bedrock.1.19.0.CapPack.v10.mcpack",
+    "1.19 - 1.19.2": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.19.-.1.19.2.CapPack.v10.zip",
+    "1.18 - 1.18.2": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.18.-.1.18.2.CapPack.v10.zip",
+    "1.17 - 1.17.1": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.17.-.1.17.1.CapPack.v10.zip",
+    "1.16.2 - 1.16.5": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.16.2.-.1.16.5.CapPack.v10.zip",
+    "1.15 - 1.16.1": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.15.-.1.16.1.CapPack.v10.zip",
+    "1.13 - 1.14.4": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.13.-.1.14.4.CapPack.v10.zip",
+    "1.11 - 1.12.2": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.11.-.1.12.2.CapPack.v10.zip",
+    "1.9 - 1.10.2": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.9.-.1.10.2.CapPack.v10.zip",
+    "1.6.1 - 1.8.9": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.6.1.-.1.8.9.CapPack.v10.zip",
   // },
   // v9: {
   //   Bedrock: "",
