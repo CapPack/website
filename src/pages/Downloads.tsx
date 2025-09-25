@@ -188,7 +188,7 @@ const downloadsData: Partial<
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.9.-.1.10.2.CapPack.v10.zip",
     "1.6.1 - 1.8.9": 
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v10/1.6.1.-.1.8.9.CapPack.v10.zip",
-  // },
+},
   // v9: {
   //   Bedrock: "",
   //   "1.18 - 1.18.2": "",
