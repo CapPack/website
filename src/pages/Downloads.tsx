@@ -10,7 +10,7 @@ type MinecraftVersion =
   | "Bedrock 1.20.31"
   | "Bedrock 1.19.22"
   | "Bedrock 1.19.0"
-  | "1.21.6 - 1.21.8"
+  | "1.21.6 - 1.21.9"
   | "1.20.5 - 1.21.5"
   | "1.20.3 - 1.20.4"
   | "1.20.2 - 1.20.4"
@@ -53,7 +53,7 @@ const downloadsData: Partial<
     "Bedrock 1.21.101": 
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.1.21.101.CapPack.v14.mcpack",
     "1.21.6 - 1.21.8":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.21.6.-.1.21.8.CapPack.v14.zip",
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.21.6.-.1.21.9.CapPack.v14.zip",
     "1.20.5 - 1.21.5":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.20.5.-.1.21.5.CapPack.v14.zip",
     "1.20.2 - 1.20.4":
