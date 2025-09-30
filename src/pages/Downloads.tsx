@@ -52,7 +52,7 @@ const downloadsData: Partial<
   v14: {
     "Bedrock 1.21.101": 
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.1.21.101.CapPack.v14.mcpack",
-    "1.21.6 - 1.21.8":
+    "1.21.6 - 1.21.9":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.21.6.-.1.21.9.CapPack.v14.zip",
     "1.20.5 - 1.21.5":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.20.5.-.1.21.5.CapPack.v14.zip",
