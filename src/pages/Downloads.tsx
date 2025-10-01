@@ -5,7 +5,7 @@ import DownloadGitHub from "../assets/DlOnGitHub.png";
 import DownloadPlanetMinecraft from "../assets/DlOnPlanetMinecraft.png";
 
 type MinecraftVersion =
-  | "Bedrock 1.21.101"
+  | "Bedrock 1.21.111"
   | "Bedrock 1.20.51"
   | "Bedrock 1.20.31"
   | "Bedrock 1.19.22"
@@ -50,8 +50,8 @@ const downloadsData: Partial<
   Record<PackReleaseVersion, Partial<Record<MinecraftVersion, Link>>>
 > = {
   v14: {
-    "Bedrock 1.21.101": 
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.1.21.101.CapPack.v14.mcpack",
+    "Bedrock 1.21.111": 
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.1.21.111.CapPack.v14.mcpack",
     "1.21.6 - 1.21.9":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.21.6.-.1.21.9.CapPack.v14.zip",
     "1.20.5 - 1.21.5":
