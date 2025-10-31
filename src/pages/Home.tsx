@@ -35,7 +35,7 @@ const Home = () => {
           <b>Java:</b> 1.6.1 - 1.21.10
         </p>
         <p>
-          <b>Bedrock:</b> 1.21.114
+          <b>Bedrock:</b> 1.21.120
         </p>
       </div>
       <div className="m-10">
