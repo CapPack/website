@@ -32,7 +32,7 @@ const Home = () => {
       <div className="m-10">
         <p className="font-bold">Supported Minecraft Versions:</p>
         <p>
-          <b>Java:</b> 1.6.1 - 1.21.10
+          <b>Java:</b> 1.6.1 - 1.21.11
         </p>
         <p>
           <b>Bedrock:</b> 1.21.120
