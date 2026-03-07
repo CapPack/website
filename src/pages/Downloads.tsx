@@ -332,7 +332,7 @@ const Downloads: React.FC = () => {
           />
         </a>
       </div>
-      <div className="flex flex-col sm:flex-row gap-3 my-4 w-full max-w-md sm:max-w-none">
+      <div className="flex flex-col sm:flex-row gap-3 my-4 w-full max-w-md sm:max-w-none items-center justify-center">
         <button
           className={`w-full sm:w-auto px-4 py-2 text-base md:text-xl rounded ${latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
           onClick={() => setLatestReleaseSelected(true)}
@@ -422,7 +422,7 @@ const Downloads: React.FC = () => {
         <div className="w-full max-w-5xl">
           {[...Object.keys(downloadsData)].map((release, index) => (
             <div key={release} className="mb-4 md:mb-6">
-              <div className="rounded border border-gray-200 px-2 sm:px-4 pb-3 sm:pb-4">
+              <div>
                 <h2
                   className={`text-xl md:text-2xl font-bold my-4 ${index !== 0 ? "mt-8" : ""} text-center`}
                 >
