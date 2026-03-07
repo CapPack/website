@@ -267,11 +267,16 @@ const Downloads: React.FC = () => {
     document.title = "Downloads - CapPack";
   }, []);
   const [latestReleaseSelected, setLatestReleaseSelected] = useState(true);
+  const latestRelease = Object.keys(downloadsData)[0] as PackReleaseVersion;
+  const versionButtonClass =
+    "px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl";
 
   return (
-    <div className="flex flex-col items-center text-center">
-      <h1 className="text-4xl font-bold mt-10 mb-4">Downloads</h1>
-      <h2 className="text-xl font-semibold">
+    <div className="flex flex-col items-center text-center px-3 sm:px-4">
+      <h1 className="text-3xl md:text-4xl font-bold mt-6 md:mt-10 mb-4">
+        Downloads
+      </h1>
+      <h2 className="text-lg md:text-xl font-semibold max-w-3xl leading-snug">
         The download buttons not named "Bedrock" are for Java Edition{" "}
         <u>only</u>
       </h2>
@@ -283,6 +288,7 @@ const Downloads: React.FC = () => {
           <img
             alt="GitHub Downloads (all assets, all releases)"
             src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/total?style=for-the-badge&logo=github&label=all%20releases"
+            className="max-w-full h-auto"
           />
         </a>
         <a
@@ -292,6 +298,7 @@ const Downloads: React.FC = () => {
           <img
             alt="GitHub Downloads (all assets, latest release)"
             src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/latest/total?sort=date&style=for-the-badge&logo=github&label=latest%20release"
+            className="max-w-full h-auto"
           />
         </a>
         <a
@@ -301,6 +308,7 @@ const Downloads: React.FC = () => {
           <img
             alt="CurseForge Downloads (Java Edition)"
             src="https://img.shields.io/curseforge/dt/546646?style=for-the-badge&logo=curseforge&label=Java%20Edition"
+            className="max-w-full h-auto"
           />
         </a>
         <a
@@ -310,6 +318,7 @@ const Downloads: React.FC = () => {
           <img
             alt="CurseForge Downloads (Bedrock Edition)"
             src="https://img.shields.io/curseforge/dt/634015?style=for-the-badge&logo=curseforge&label=Bedrock%20Edition"
+            className="max-w-full h-auto"
           />
         </a>
         <a
@@ -319,18 +328,19 @@ const Downloads: React.FC = () => {
           <img
             alt="Modrinth Downloads"
             src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Java%20Edition"
+            className="max-w-full h-auto"
           />
         </a>
       </div>
-      <div className="flex gap-4 my-4 ">
+      <div className="flex flex-col sm:flex-row gap-3 my-4 w-full max-w-md sm:max-w-none">
         <button
-          className={`px-4 py-2 text-2xl ${latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
+          className={`w-full sm:w-auto px-4 py-2 text-base md:text-xl rounded ${latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
           onClick={() => setLatestReleaseSelected(true)}
         >
           Latest release
         </button>
         <button
-          className={`px-4 py-2 text-2xl ${!latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
+          className={`w-full sm:w-auto px-4 py-2 text-base md:text-xl rounded ${!latestReleaseSelected ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700"}`}
           onClick={() => setLatestReleaseSelected(false)}
         >
           All releases
@@ -338,17 +348,17 @@ const Downloads: React.FC = () => {
       </div>
 
       {latestReleaseSelected ? (
-        <div>
-          <p className="text-lg font-bold my-4 text-center">
+        <div className="w-full max-w-5xl">
+          <p className="text-lg md:text-xl font-bold my-4 text-center">
             Current latest release: v14
           </p>
           <div className="flex justify-center">
-            <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
+            <div className="max-w-4xl w-full flex flex-wrap gap-3 justify-center">
               {Object.entries(downloadsData.v14!).map(([version, link]) => (
                 <a
                   key={version}
                   href={link}
-                  className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl"
+                  className={versionButtonClass}
                 >
                   {version}
                 </a>
@@ -358,18 +368,6 @@ const Downloads: React.FC = () => {
           <div className="bg-white py-4 flex justify-center">
             <div className="flex flex-wrap justify-center max-w-screen-xl mx-auto">
               <a
-                href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="m-4"
-              >
-                <img
-                  src={DownloadCurseforge}
-                  alt="Download on Curseforge"
-                  className="w-56"
-                />
-              </a>
-              <a
                 href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/tag/v14"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -378,7 +376,19 @@ const Downloads: React.FC = () => {
                 <img
                   src={DownloadGitHub}
                   alt="Download on GitHub"
-                  className="w-56"
+                  className="w-48 sm:w-56"
+                />
+              </a>
+              <a
+                href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="m-4"
+              >
+                <img
+                  src={DownloadCurseforge}
+                  alt="Download on Curseforge"
+                  className="w-48 sm:w-56"
                 />
               </a>
               <a
@@ -390,7 +400,7 @@ const Downloads: React.FC = () => {
                 <img
                   src={DownloadModrinth}
                   alt="Download on Modrinth"
-                  className="w-56"
+                  className="w-48 sm:w-56"
                 />
               </a>
               <a
@@ -402,38 +412,37 @@ const Downloads: React.FC = () => {
                 <img
                   src={DownloadPlanetMinecraft}
                   alt="Download on Planet Minecraft"
-                  className="w-56"
+                  className="w-48 sm:w-56"
                 />
               </a>
             </div>
           </div>
         </div>
       ) : (
-        <div>
+        <div className="w-full max-w-5xl">
           {[...Object.keys(downloadsData)].map((release, index) => (
-            <div key={release}>
-              <div>
+            <div key={release} className="mb-4 md:mb-6">
+              <div className="rounded border border-gray-200 px-2 sm:px-4 pb-3 sm:pb-4">
                 <h2
-                  className={`text-lg font-bold my-4 ${index !== 0 ? "mt-12" : ""} text-center`}
+                  className={`text-xl md:text-2xl font-bold my-4 ${index !== 0 ? "mt-8" : ""} text-center`}
                 >
                   {release}
                 </h2>
                 <div className="flex justify-center">
-                  <div className="max-w-4xl w-full flex flex-wrap gap-4 justify-center">
+                  <div className="max-w-4xl w-full flex flex-wrap gap-3 justify-center">
                     {Object.entries(
                       downloadsData[release as PackReleaseVersion]!,
                     ).map(([version, link]) => (
                       <a
                         key={version}
                         href={link}
-                        className="px-4 py-2 bg-blue-500 hover:bg-yellow-500 text-white text-2xl"
+                        className={versionButtonClass}
                       >
                         {version}
                       </a>
                     ))}
                   </div>
                 </div>
-                {/* Show GitHub download image under each past release */}
                 <div className="bg-white py-4 flex justify-center">
                   <div className="flex flex-wrap justify-center max-w-screen-xl mx-auto">
                     <a
@@ -445,9 +454,49 @@ const Downloads: React.FC = () => {
                       <img
                         src={DownloadGitHub}
                         alt="Download on GitHub"
-                        className="w-56"
+                        className="w-48 sm:w-56"
                       />
                     </a>
+                    {release === latestRelease && (
+                      <>
+                        <a
+                          href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="m-4"
+                        >
+                          <img
+                            src={DownloadCurseforge}
+                            alt="Download on Curseforge"
+                            className="w-48 sm:w-56"
+                          />
+                        </a>
+                        <a
+                          href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="m-4"
+                        >
+                          <img
+                            src={DownloadModrinth}
+                            alt="Download on Modrinth"
+                            className="w-48 sm:w-56"
+                          />
+                        </a>
+                        <a
+                          href="https://www.planetminecraft.com/texture-pack/the-captainsparklez-texture-pack/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="m-4"
+                        >
+                          <img
+                            src={DownloadPlanetMinecraft}
+                            alt="Download on Planet Minecraft"
+                            className="w-48 sm:w-56"
+                          />
+                        </a>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
