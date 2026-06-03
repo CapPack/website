@@ -1,1 +1,5 @@
-/*    /index.html   200
+/downloads /downloads.html 200
+/version-compatibility /version-compatibility.html 200
+/credits /credits.html 200
+/home /index.html 301
+/* /index.html 200

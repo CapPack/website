@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Downloads - CapPack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-wrap">
+        <img src="src/assets/CapPack.png" alt="CapPack logo" class="brand-logo" />
+        <div>
+          <a class="brand-title" href="index.html">CapPack</a>
+          <p class="brand-subtitle">The CaptainSparklez Texture Pack</p>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" data-menu-toggle>☰</button>
+      <nav class="main-nav" data-menu>
+        <a href="index.html">Home</a>
+        <a href="downloads.html" class="active">Downloads</a>
+        <a href="version-compatibility.html">Version Compatibility</a>
+        <a href="credits.html">Credits</a>
+        <a href="https://discord.gg/aDE8TYA" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"
+            alt="Discord"
+            class="nav-icon"
+          />
+        </a>
+        <a href="https://github.com/CapPack/the-captainsparklez-texture-pack" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="nav-icon" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="page downloads-page">
+      <h1 class="hero-title small">Downloads</h1>
+      <p class="hero-subtitle tiny">The download buttons not named "Bedrock" are for Java Edition <u>only</u>.</p>
+
+      <section class="badge-row">
+        <a href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases">
+          <img
+            alt="GitHub Downloads (all assets, all releases)"
+            src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/total?style=for-the-badge&logo=github&label=all%20releases"
+          />
+        </a>
+        <a href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/latest">
+          <img
+            alt="GitHub Downloads (all assets, latest release)"
+            src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/latest/total?sort=date&style=for-the-badge&logo=github&label=latest%20release"
+          />
+        </a>
+        <a href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20">
+          <img
+            alt="CurseForge Downloads (Java Edition)"
+            src="https://img.shields.io/curseforge/dt/546646?style=for-the-badge&logo=curseforge&label=Java%20Edition"
+          />
+        </a>
+        <a href="https://www.curseforge.com/minecraft-bedrock/addons/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20">
+          <img
+            alt="CurseForge Downloads (Bedrock Edition)"
+            src="https://img.shields.io/curseforge/dt/634015?style=for-the-badge&logo=curseforge&label=Bedrock%20Edition"
+          />
+        </a>
+        <a href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack/versions">
+          <img
+            alt="Modrinth Downloads"
+            src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Java%20Edition"
+          />
+        </a>
+      </section>
+
+      <section class="toggle-row">
+        <button type="button" class="mode-button active" data-mode="latest">Latest release</button>
+        <button type="button" class="mode-button" data-mode="all">All releases</button>
+      </section>
+
+      <section id="latest-release-view"></section>
+      <section id="all-releases-view" class="hidden"></section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-authors">
+        Made by:
+        <a href="https://thermic.icu" target="_blank" rel="noopener noreferrer" class="author thermic">ThermicWaffle</a>,
+        <a href="https://linktr.ee/muddyCookie" target="_blank" rel="noopener noreferrer" class="author muddy">muddyCookie</a>,
+        & Ludumancer
+      </p>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

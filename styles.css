@@ -1,0 +1,417 @@
+:root {
+  --text: #111827;
+  --muted: #374151;
+  --line: #e5e7eb;
+  --surface: #f3f4f6;
+  --blue: #3b82f6;
+  --yellow: #f59e0b;
+  --red: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  color: var(--text);
+  font-size: 1.125rem;
+  background: #f3f3f3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d8d8d8;
+  background: #f3f3f3;
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo {
+  width: 6.25rem;
+  max-width: 100%;
+}
+
+.brand-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1.45rem;
+}
+
+.main-nav a {
+  white-space: nowrap;
+  font-weight: 700;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  opacity: 1;
+}
+
+.nav-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.page {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.home-page {
+  max-width: 1420px;
+}
+
+.hero-title {
+  margin: 1rem 0;
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+}
+
+.hero-title.small {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero-subtitle {
+  margin: 1rem 0 1.75rem;
+  font-size: clamp(1.25rem, 2.1vw, 2.5rem);
+  font-weight: 600;
+}
+
+.hero-subtitle.tiny {
+  font-size: clamp(1rem, 2.4vw, 1.3rem);
+}
+
+.cta-button,
+.download-chip {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--blue);
+  color: #fff;
+  font-size: clamp(1rem, 1.4vw, 1.9rem);
+  transition: background 0.2s ease;
+}
+
+.cta-button:hover,
+.download-chip:hover {
+  background: var(--yellow);
+}
+
+.content-block {
+  margin: 2.5rem auto;
+  max-width: 74rem;
+  line-height: 1.35;
+}
+
+.block-title {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.badge-row img {
+  max-width: 100%;
+}
+
+.section-divider {
+  width: min(16rem, 80vw);
+  margin: 2rem auto;
+  border: 0;
+  border-top: 1px solid #cfcfcf;
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.split-section.reverse {
+  direction: rtl;
+}
+
+.split-section.reverse > * {
+  direction: ltr;
+}
+
+.split-copy {
+  font-size: clamp(1.35rem, 2.2vw, 3.3rem);
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+.split-media {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slideshow {
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.video-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrap iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.mode-button {
+  border: 0;
+  background: #e5e7eb;
+  color: #374151;
+  cursor: pointer;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  padding: 0.5rem 1rem;
+}
+
+.mode-button.active {
+  background: var(--red);
+  color: #fff;
+}
+
+.release-heading {
+  margin: 1.5rem 0 0.75rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.chip-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.platform-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.platform-row img {
+  width: 14rem;
+  max-width: 100%;
+}
+
+.release-actions {
+  margin-top: 1rem;
+  flex-wrap: nowrap;
+}
+
+.release-actions img {
+  width: 14rem;
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.iframe-page {
+  max-width: none;
+  width: 100%;
+  min-height: calc(100vh - 220px);
+}
+
+.full-iframe {
+  width: 100%;
+  min-height: calc(100vh - 260px);
+  border: 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.25rem 1rem 2rem;
+}
+
+.footer-authors {
+  font-size: clamp(1.4rem, 3vw, 2.25rem);
+  font-weight: 600;
+}
+
+.author {
+  text-decoration: underline;
+  margin: 0 0.2rem;
+}
+
+.author:hover {
+  text-decoration: none;
+}
+
+.thermic {
+  color: #f97316;
+}
+
+.muddy {
+  color: #16a34a;
+}
+
+@media (max-width: 1028px) {
+  .site-header {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .brand-wrap {
+    flex: 1;
+    min-width: 0;
+    gap: 0.6rem;
+  }
+
+  .brand-logo {
+    width: 4.75rem;
+  }
+
+  .brand-title {
+    font-size: 1.9rem;
+    line-height: 1.1;
+  }
+
+  .brand-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.25;
+    max-width: 16ch;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    margin-left: auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: #e5e7eb;
+    border-radius: 0.35rem;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.85rem 0;
+    margin-top: 0.3rem;
+    background: #e6e6e6;
+    font-size: 1.75rem;
+    border-top: 1px solid #d0d0d0;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .split-section,
+  .split-section.reverse {
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+  }
+
+  .split-copy {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+  }
+
+  .cta-button {
+    font-size: clamp(1.5rem, 7vw, 2.7rem);
+  }
+
+  .page {
+    padding: 1.25rem 1rem;
+  }
+
+  .release-actions {
+    flex-wrap: wrap;
+  }
+}

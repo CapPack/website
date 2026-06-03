@@ -2,12 +2,169 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/ico+svg" href="/favicon.ico" />
-    <meta name="cf-2fa-verify" content="HuFJ0gkgTFi6PkBAvMwO"/>
-    <title>CapPack - CaptainSparklez Texture Pack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="cf-2fa-verify" content="HuFJ0gkgTFi6PkBAvMwO" />
+    <title>Home - CapPack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="site-header">
+      <div class="brand-wrap">
+        <img src="src/assets/CapPack.png" alt="CapPack logo" class="brand-logo" />
+        <div>
+          <a class="brand-title" href="index.html">CapPack</a>
+          <p class="brand-subtitle">The CaptainSparklez Texture Pack</p>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" data-menu-toggle>☰</button>
+      <nav class="main-nav" data-menu>
+        <a href="index.html" class="active">Home</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="version-compatibility.html">Version Compatibility</a>
+        <a href="credits.html">Credits</a>
+        <a href="https://discord.gg/aDE8TYA" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"
+            alt="Discord"
+            class="nav-icon"
+          />
+        </a>
+        <a href="https://github.com/CapPack/the-captainsparklez-texture-pack" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="nav-icon" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="page home-page">
+      <h1 class="hero-title">CapPack</h1>
+      <p class="hero-subtitle">The Official CaptainSparklez Texture Pack</p>
+      <a href="downloads.html" class="cta-button">Download Here</a>
+
+      <section class="content-block">
+        <p class="block-title">Supported Minecraft Versions:</p>
+        <p><b>Java:</b> 1.6.1 - 1.21.11</p>
+        <p><b>Bedrock:</b> 1.21.130</p>
+      </section>
+
+      <section class="content-block">
+        <p class="block-title">To Enable Custom Item Names:</p>
+        <p><b>Java:</b> Open "Options", then "Language", and change the language to "CaptainSparklez (US)"</p>
+        <p><b>Bedrock:</b> Open "Settings", then "Language", and change the language to "English (CaptainSparklez)"</p>
+      </section>
+
+      <section class="content-block">
+        <p>
+          <a href="https://www.optifine.net/home" target="_blank" rel="noopener noreferrer" class="link">OptiFine</a>
+          or
+          <a href="https://modrinth.com/mod/entity-model-features" target="_blank" rel="noopener noreferrer" class="link">Entity Model Features</a>
+          is <b>recommended</b> for the full experience.
+        </p>
+
+        <div class="badge-row">
+          <a href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases">
+            <img
+              alt="GitHub Downloads (all assets, all releases)"
+              src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/total?style=for-the-badge&logo=github&label=all%20releases"
+            />
+          </a>
+          <a href="https://github.com/CapPack/the-captainsparklez-texture-pack/releases/latest">
+            <img
+              alt="GitHub Downloads (all assets, latest release)"
+              src="https://img.shields.io/github/downloads/CapPack/the-captainsparklez-texture-pack/latest/total?sort=date&style=for-the-badge&logo=github&label=latest%20release"
+            />
+          </a>
+          <a href="https://www.curseforge.com/minecraft/texture-packs/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20">
+            <img
+              alt="CurseForge Downloads (Java Edition)"
+              src="https://img.shields.io/curseforge/dt/546646?style=for-the-badge&logo=curseforge&label=Java%20Edition"
+            />
+          </a>
+          <a href="https://www.curseforge.com/minecraft-bedrock/addons/the-captainsparklez-texture-pack/files/all?page=1&pageSize=20">
+            <img
+              alt="CurseForge Downloads (Bedrock Edition)"
+              src="https://img.shields.io/curseforge/dt/634015?style=for-the-badge&logo=curseforge&label=Bedrock%20Edition"
+            />
+          </a>
+          <a href="https://modrinth.com/resourcepack/the-captainsparklez-texture-pack/versions">
+            <img
+              alt="Modrinth Downloads"
+              src="https://img.shields.io/modrinth/dt/ARED1l1P?style=for-the-badge&logo=modrinth&label=Java%20Edition"
+            />
+          </a>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="split-section">
+        <div class="split-media slideshow" data-slideshow>
+          <img src="src/assets/image1.png" alt="CapPack screenshot 1" class="slide active" />
+          <img src="src/assets/image2.png" alt="CapPack screenshot 2" class="slide" />
+          <img src="src/assets/image3.png" alt="CapPack screenshot 3" class="slide" />
+          <img src="src/assets/image4.png" alt="CapPack screenshot 4" class="slide" />
+          <img src="src/assets/image5.png" alt="CapPack screenshot 5" class="slide" />
+          <img src="src/assets/image6.png" alt="CapPack screenshot 6" class="slide" />
+        </div>
+        <div class="split-copy">
+          Plenty of custom textures, custom models, and splash texts you won't find anywhere else. Oh, and it reduces rain particles without needing OptiFine :P
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="split-section">
+        <div class="split-copy">
+          The Official CaptainSparklez Texture Pack, used and approved by CaptainSparklez himself.
+        </div>
+        <div class="split-media video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/bzWLMkoM9ks?si=DB0xzmiPg2ry2iv5"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="split-section">
+        <div class="split-media split-copy">
+          <a href="downloads.html" class="cta-button">Download Here</a>
+        </div>
+        <div class="split-copy">
+          Community inspired and made. The perfect texture pack for any CaptainSparklez fan, loved by all.
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="content-block license">
+        <p class="block-title">License:</p>
+        <p>
+          You have the right to share and adapt this work, however, you <b>must</b> provide the name of the creator (ThermicWaffle), a copyright notice, a license notice, and a link to this work.
+          You must <b>also</b> distribute your adaptations under the same license as the original. You <b>may not</b> use this work for commercial purposes or make a profit off of it.
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="link">(CC BY-NC-SA 4.0)</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-authors">
+        Made by:
+        <a href="https://thermic.icu" target="_blank" rel="noopener noreferrer" class="author thermic">ThermicWaffle</a>,
+        <a href="https://linktr.ee/muddyCookie" target="_blank" rel="noopener noreferrer" class="author muddy">muddyCookie</a>,
+        & Ludumancer
+      </p>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
   </body>
 </html>
