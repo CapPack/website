@@ -1,9 +1,9 @@
 const downloadsData = {
   v14: {
-    Bedrock:
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.CapPack.v14.mcpack",
-    "1.21.6+":
-      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.21.6+.CapPack.v14.zip",
+    "Bedrock: 26.13":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/Bedrock.26.13.CapPack.v14.mcpack",
+    "1.21.6-1.21.11":
+      "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.21.6.-.1.21.11.CapPack.v14.zip",
     "1.20.5 - 1.21.5":
       "https://github.com/CapPack/the-captainsparklez-texture-pack/releases/download/v14/1.20.5.-.1.21.5.CapPack.v14.zip",
     "1.20.2 - 1.20.4":
